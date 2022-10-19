@@ -18,6 +18,11 @@ import java.util.Scanner;
 final class Main {
 
     /**
+     * Multiple usage of same string "Calculating...".
+     */
+    public static final String CALCULATING = "Calculating...";
+
+    /**
     * Prevent instantiation.
     * Throw an exception IllegalStateException.
     * if this ever is called
@@ -64,20 +69,26 @@ final class Main {
         stackNum.finishedStack();
 
         // Before the new popped array.
-        System.out.println("The new array is");
-        System.out.println("Calculating...");
+        System.out.println("\nThe new array is");
+        System.out.println(CALCULATING);
 
         // Shows the popped array.
         arrayPopped = stackNum.pop();
         stackNum.finishedStack();
 
         // The peak number.
-        System.out.println("The peak number is");
-        System.out.println("Calculating ...");
+        System.out.println("\nThe peak number is");
+        System.out.println(CALCULATING);
 
         // what the peak number is.
         peakNumber = stackNum.peak();
         System.out.println(peakNumber);
+
+        // what the cleared array is
+        System.out.println("\nThe cleared Array Is Empty!");
+        System.out.println("Calculating ...");
+        stackNum.clearedArray();
+        stackNum.finishedStack();
 
         // End of program.
         System.out.println("\nDone!");

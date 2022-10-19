@@ -77,6 +77,13 @@ public class JacksonStacks {
     }
 
     /**
+     * This is a clear function.
+     */
+    public void clearedArray() {
+        stackNum.clear();
+    }
+
+    /**
     * This is the final stack.
     */
     public void finishedStack() {
